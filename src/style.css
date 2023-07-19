@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100vh;
+}
+
+h1 {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.actions {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions button {
+  appearance: none;
+  padding: 10px 15px;
+  background: blue;
+  box-shadow: none;
+  border: none;
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+.actions button:hover {
+  opacity: 0.7;
+}
+
+.messages {
+  position: relative;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.messages ul {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.messages ul li {
+  font-size: 18px;
+  line-height: 2;
+  list-style: none;
+}
